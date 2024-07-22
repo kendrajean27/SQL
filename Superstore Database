@@ -1,0 +1,20 @@
+#This project utilizes the following Superstore data:
+
+#Use a SELECT statement to order the items by price.
+SELECT item_name, price
+FROM superstore
+Order By price;
+
+#Show a statistic about the item prices. 
+SELECT MAX (price)
+FROM superstore
+
+#Show a statistic about the price for items in the category of "Kitchen Supplies"
+SELECT AVG (price), category
+FROM superstore
+WHERE category= "Kitchen Supplies";
+
+
+Select item_name, stock_quantity
+FROM superstore
+Where item_name="Air Purifier";
